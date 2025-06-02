@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <fcntl.h>
-
+#include <string.h>
+#include <unistd.h>
 
 #define FILE "write.txt"
 
@@ -11,12 +12,12 @@ int main(int argc, char *argv[]){
 	if ( argc < 2 ){
 		printf("Usage: ./write <string_to_write>\n");
 		exit(EXIT_FAILURE);
-	} else if ( argc > 2 ){
+	} 
+	
+	if ( argc > 2 ){
 		printf("Usage: ./write <string_to_write>\n");
 		printf("More than required number of arguments were passed\n");
 		exit(EXIT_FAILURE);
-	} else {
-		continue;
 	}
 
 	// Variable to store user data
@@ -24,7 +25,7 @@ int main(int argc, char *argv[]){
 	
 	// Storing the input data in the user_input
 	// This assumes that the user data is only 10 characters long
-	user_input = argv[1];
+	strcpy(user_input, argv[1]);
 
 	// Storing the number of bytes written to the file
 	ssize_t bytes_written;
