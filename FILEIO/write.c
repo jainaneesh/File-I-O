@@ -9,13 +9,16 @@
 int main(int argc, char *argv[]){
 
 	// Checking if enough arguments were passed in
-	if ( argc < 2 ){
+	if ( argc < 2 )
+	{
+		printf("\n\nAuthor: Aneesh Jain\n");
 		printf("========== write usage ===========\n");
 		printf("Usage: ./write <string_to_write>\n");
 		exit(EXIT_FAILURE);
 	} 
 	
 	if ( argc > 2 ){
+		printf("\n\nAuthor: Aneesh Jain\n");
 		printf("========== write usage ===========\n");
 		printf("Usage: ./write <string_to_write>\n");
 		printf("More than required number of arguments were passed\n");
