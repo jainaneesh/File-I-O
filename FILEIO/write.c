@@ -10,11 +10,13 @@ int main(int argc, char *argv[]){
 
 	// Checking if enough arguments were passed in
 	if ( argc < 2 ){
+		printf("========== write usage ===========")
 		printf("Usage: ./write <string_to_write>\n");
 		exit(EXIT_FAILURE);
 	} 
 	
 	if ( argc > 2 ){
+		printf("========== write usage ===========")
 		printf("Usage: ./write <string_to_write>\n");
 		printf("More than required number of arguments were passed\n");
 		exit(EXIT_FAILURE);
