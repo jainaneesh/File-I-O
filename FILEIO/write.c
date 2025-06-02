@@ -13,15 +13,15 @@ int main(int argc, char *argv[]){
 	{
 		printf("\n\nAuthor: Aneesh Jain\n");
 		printf("========== write usage ===========\n");
-		printf("Usage: ./write <string_to_write>\n");
+		printf("Usage: ./write <string_to_write>\n\n");
 		exit(EXIT_FAILURE);
 	} 
 	
 	if ( argc > 2 ){
 		printf("\n\nAuthor: Aneesh Jain\n");
-		printf("========== write usage ===========\n");
-		printf("Usage: ./write <string_to_write>\n");
 		printf("More than required number of arguments were passed\n");
+		printf("========== write usage ===========\n");
+		printf("Usage: ./write <string_to_write>\n\n");
 		exit(EXIT_FAILURE);
 	}
 
