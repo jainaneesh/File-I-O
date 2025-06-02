@@ -39,12 +39,13 @@ int main(int argc, char *argv[]){
 	int fd = 0;
 
 	// Open the file and create if it doesn't exist
+	printf("Opening file %s\n",FILE);
 	fd = open(FILE, O_RDONLY | O_WRONLY | O_CREAT, 0600);
 
 	if ( fd < 0 ){
 		perror("File could not be opened");
 	} else {
-		printf("File successfully opened with file descriptor %d", fd);
+		printf("File successfully opened with file descriptor %d\n", fd);
 	}
 
 	bytes_written = write(fd, &user_input, sizeof(user_input));
