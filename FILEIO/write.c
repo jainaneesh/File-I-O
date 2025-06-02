@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <fnctl.h>
+#include <fcntl.h>
 
 
 #define FILE "write.txt"
